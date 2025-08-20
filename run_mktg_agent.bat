@@ -1,0 +1,1 @@
+@powershell.exe -ExecutionPolicy Bypass -File "%~dp0launch_mktg_agent.ps1"
