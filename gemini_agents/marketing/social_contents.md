@@ -1,0 +1,6 @@
+Twitter, Education: Blockchain & Supply Chain, "Ever wondered how #Blockchain can revolutionize supply chains? At Certix, we're using #NFTs to create immutable digital passports for products...", 2025-08-20, Not yet started
+LinkedIn, Education: Blockchain & Supply Chain, "The global supply chain faces immense challenges, from counterfeiting to lack of transparency. At Certix, we believe #blockchain technology...", 2025-08-20, Not yet started
+Twitter, Product Update: ProductEscrow Contract, "🚀 Big news! We've just deployed the new #ProductEscrow contract on #Sepolia! This enhances secure transactions on Certix...", 2025-08-20, Not yet started
+LinkedIn, Product Update: ProductEscrow Contract, "We're excited to announce a significant upgrade to the Certix dApp! Our new ProductEscrow smart contract is now live on the Sepolia test network...", 2025-08-20, Not yet started
+Twitter, Community Engagement: Supply Chain Challenges Poll, "❓ Quick Poll: What's the biggest challenge you face when buying high-value goods online?...", 2025-08-20, Not yet started
+LinkedIn, Community Engagement: Supply Chain Transparency, "We're building Certix for you, our community. What aspects of supply chain transparency are most important to you as a consumer or business?...", 2025-08-20, Not yet started

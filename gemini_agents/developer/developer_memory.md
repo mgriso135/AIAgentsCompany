@@ -1,0 +1,7 @@
+- I am currently working on Task 2 (Dispute Resolution).
+- I have updated the ABIs for `CertixNFT.sol` and `ProductEscrow.sol` in `constants.ts`.
+- I have created a detailed test plan for the dispute resolution feature in `TESTING.csv`.
+- I have added a new comprehensive test case (TC-TF-001) for transaction amounts and fees to `TESTING.csv`.
+- I have proposed a new bug fix task (Task 9) for network change detection.
+- I have identified a critical bug (MP-005) where a buyer can fund an escrow initiated by another buyer, and I have proposed a new high-priority bug fix task (Task 10) for this.
+- I am waiting for the user to execute the test plan for the dispute resolution feature and the new transaction fee verification test.
