@@ -1,91 +1,71 @@
 # AIAgentsCompany
 
-Welcome to the AIAgentsCompany! This project is a unique collaboration between two AI agents, a Lead Developer and a Marketing Manager, with oversight from a human Business Analyst.
-
-## About The Project
-
-This project simulates a small company where AI agents are responsible for core business functions.
-
-*   **The Lead Developer** is an AI agent that handles all aspects of software development.
-*   **The Marketing Manager** is an AI agent that manages all marketing and promotional activities.
-*   **The Business Analyst** is a human who provides strategic direction, requirements, and analysis.
-
-The goal of this project is to explore the capabilities of AI agents working together to build and promote a product.
+This repository contains the work of a company powered by two AI agents: a Lead Developer and a Marketing Manager. A human Business Analyst oversees their work.
 
 ## Getting Started
 
-To get the agents up and running, you can use the provided scripts.
+To interact with the AI agents and manage tasks, you will need the `gemini-cli` tool.
 
-### Prerequisites
+### Installation
 
-*   PowerShell (for `.ps1` scripts)
-*   Windows Command Prompt (for `.bat` scripts)
-
-### Running the Agents
-
-You can run the agents using either the PowerShell or batch scripts:
-
-**Developer Agent:**
-
-```bash
-# Using PowerShell
-./launch_dev_agent.ps1
-
-# Using Command Prompt
-run_dev_agent.bat
-```
-
-**Marketing Agent:**
-
-```bash
-# Using PowerShell
-./launch_mktg_agent.ps1
-
-# Using Command Prompt
-run_mktg_agent.bat
-```
-
-## Usage
-
-The primary way to interact with the agents is by providing them with tasks and objectives. The agents will then work autonomously to achieve their goals. Their work and communication are logged in the `gemini_agents` directory.
-
-*   **Shared Briefing:** The `gemini_agents/_SHARED_BRIEFING.md` file is used for communication and coordination between the agents. The Business Analyst can also use this file to provide direction to the agents.
-*   **Agent Logs:** Each agent maintains logs of their work in their respective directories within `gemini_agents`.
+1.  **Install Node.js:** If you don't have Node.js installed, download and install it from [nodejs.org](https://nodejs.org/).
+2.  **Install gemini-cli:** Open your terminal or command prompt and run the following command:
+    ```bash
+    npm install -g gemini-cli
+    ```
 
 ## Folder Structure
 
-```
-C:\Users\MioPC\Documents\AIAgentsCompany\
-├───launch_dev_agent.ps1
-├───launch_mktg_agent.ps1
-├───run_dev_agent.bat
-├───run_mktg_agent.bat
-├───GEMINI.md
-├───README.md
-└───gemini_agents\
-    ├───_SHARED_BRIEFING.md
-    ├───developer\
-    │   └───log_2025-08-20.md
-    └───marketing\
-        └───20250820_initial_marketing_plan.md
-```
+- `launch_dev_agent.ps1` & `run_dev_agent.bat`: Scripts to run the Developer AI agent.
+- `launch_mktg_agent.ps1` & `run_mktg_agent.bat`: Scripts to run the Marketing AI agent.
+- `gemini_agents/`: Contains the work products of the AI agents.
+  - `_SHARED_BRIEFING.md`: A shared communication channel for the agents, used for high-level strategic alignment and cross-agent communication.
+  - `developer/`: The Developer agent's work.
+    - `developer_tasks.csv`: The Developer agent's dedicated task list, reviewed and prioritized by the Business Analyst.
+    - `developer_memory.md`: The Developer agent's long-term memory file, storing learned facts and operational knowledge.
+    - `log_2025-08-20.md`: The developer's log for August 20th, 2025.
+  - `marketing/`: The Marketing agent's work.
+    - `20250820_initial_marketing_plan.md`: The initial marketing plan for August 20th, 2025.
+    - `marketing_tasks.csv`: The Marketing agent's dedicated task list, reviewed and prioritized by the Business Analyst.
+    - `marketing_memory.md`: The Marketing agent's long-term memory file, storing learned facts and operational knowledge.
 
-*   `launch_*.ps1` / `run_*.bat`: Scripts to launch the AI agents.
-*   `GEMINI.md`: A high-level overview of the project.
-*   `README.md`: This file.
-*   `gemini_agents/`: The directory containing all agent-generated work.
-    *   `_SHARED_BRIEFING.md`: A shared markdown file for inter-agent communication.
-    *   `developer/`: The developer agent's workspace.
-    *   `marketing/`: The marketing agent's workspace.
+## Roles
 
-## Contributing
+*   **Lead Developer (AI):** Responsible for all software development. Operates with a dedicated `developer_tasks.csv` for task management and `developer_memory.md` for long-term knowledge retention.
+*   **Marketing Manager (AI):** Responsible for all marketing activities. Operates with a dedicated `marketing_tasks.csv` for task management and `marketing_memory.md` for long-term knowledge retention.
+*   **Business Analyst (Human):** Oversees the project and acts as the primary interface for the AI agents.
+    *   **Task Management:** Reviews, approves, and prioritizes tasks within each agent's `_tasks.csv` file.
+    *   **Strategic Alignment:** Utilizes `_SHARED_BRIEFING.md` for high-level communication and to ensure cross-agent strategic alignment.
+    *   **Real-World Interface:** Serves as the bridge between the AI agents and the real world, handling tasks that require human interaction, external communication, or capabilities beyond the agents' autonomous reach.
+    *   **Analysis:** Analyzes the results and outputs generated by both AI agents.
 
-Currently, the primary contributor is the human Business Analyst. Contributions can be made by:
+## Usage: Managing Task Lists
 
-1.  Providing clear and concise requirements in the `_SHARED_BRIEFING.md`.
-2.  Reviewing the work of the AI agents.
-3.  Updating the scripts and documentation.
+The AI agents manage their tasks using dedicated CSV files (`developer_tasks.csv` and `marketing_tasks.csv`). As a Business Analyst, you will interact with these files to assign, prioritize, and track tasks.
 
-## License
+### Best Practices for Task Management:
 
-This project is licensed under the MIT License - see the `LICENSE.txt` file for details.
+1.  **Assigning Tasks:**
+    *   Open the relevant `_tasks.csv` file (e.g., `gemini_agents/developer/developer_tasks.csv`) in a spreadsheet editor or a text editor.
+    *   Add a new row for each task. Ensure you follow the existing column structure (e.g., `Task ID`, `Description`, `Status`, `Priority`).
+    *   Provide a clear and concise `Description` of the task.
+    *   Set the initial `Status` to "Pending" or "New".
+    *   Assign a `Priority` (e.g., "High", "Medium", "Low") to help the agent prioritize its work.
+
+2.  **Prioritizing Tasks:**
+    *   Adjust the `Priority` column for existing tasks as needed. Agents are designed to pick up high-priority tasks first.
+
+3.  **Tracking Progress:**
+    *   Agents will update the `Status` column as they work on tasks (e.g., "In Progress", "Completed", "Blocked").
+    *   Regularly review these files to monitor progress and identify any tasks that require your intervention (e.g., "Blocked" tasks).
+
+4.  **Communication:**
+    *   For high-level strategic discussions or cross-agent communication, use the `_SHARED_BRIEFING.md` file.
+    *   For specific task-related details or clarifications, you can add comments within the `_tasks.csv` file if your editor supports it, or create separate markdown files in the agent's `Tasks` directory, referencing the `Task ID`.
+
+By following these practices, you can effectively manage the workflow of your AI agents and ensure project goals are met efficiently.
+
+A TIP: regularly ask your agent to suggest new tasks and add them to the list :-)
+
+Matteo Griso
+mgrisoster@gmail.com
