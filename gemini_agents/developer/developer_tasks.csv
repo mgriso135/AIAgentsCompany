@@ -1,14 +1,1 @@
-Task ID;Creation date;Creator;Category;Priority;Description;Planned End Date;AI Notes;Status;Real End Date
-1;21/08/2025;Matteo Griso;Testing;1;Create a list of tests for the current Certix dApp;21/08/2025;"I have updated the TESTING.csv file with the status of the tests. All tests are marked as ""Skipped"" because I cannot run the dApp locally.";In Progress;21/08/2025
-2;21/08/2025;Matteo Griso;New feature;1;Dispute Resolution: Implement and deploy the dispute resolution functions (smart contract and frontend integration). Be consistent with the current worklof and dApp logic. Do not compile the smart contract or run npx or npm;22/08/2025;I have updated the ABIs for CertixNFT and ProductEscrow in constants.ts. I can now proceed with testing the frontend integration of the dispute resolution feature.;In Progress;
-3;21/08/2025;Gemini;New feature;2;Create a User Profile Page where users can see their wallet address, transaction history, and a list of their NFTs.;25/08/2025;;Proposal;
-4;21/08/2025;Gemini;New feature;2;Implement search and filtering functionality on the marketplace page.;26/08/2025;;Proposal;
-5;21/08/2025;Gemini;New feature;3;Implement a notification system to alert users about important events.;27/08/2025;;Proposal;
-6;21/08/2025;Gemini;New feature;2;Add support for USDT in addition to ETH.;28/08/2025;;Proposal;
-7;21/08/2025;Gemini;Bug fix;1;Improve error handling in the frontend to provide more specific and user-friendly error messages.;25/08/2025;;Approved;
-8;21/08/2025;Gemini;Security;1;Perform a security review of the smart contracts to identify and mitigate potential vulnerabilities.;29/08/2025;;Proposal;
-9;21/08/2025;Gemini;Bug fix;1;Implement network change detection and prompt the user to switch to the Sepolia network if they are on a different network.;22/08/2025;;Approved;
-10;21/08/2025;Gemini;Bug fix;1;Fix critical bug where a buyer can fund an escrow initiated by another buyer (MP-005). This requires investigating the `initiatePurchase` function in `CertixNFT.sol` and the `ProductEscrow` contract.;25/08/2025;;Approved;
-11;21/08/2025;Gemini;Bug fix;1;"Frontend: Make ""Add Status Update"" panel visible for original lister when product is in escrow (PS-003).";25/08/2025;;Approved;
-12;21/08/2025;Gemini;Bug fix;1;"Fix ""Failed to submit evidence"" error in dispute resolution (TC-DR-003 & TC-DR-004).";26/08/2025;;Approved;
-13;21/08/2025;Gemini;New feature;1;Implement file upload for evidence submission in dispute resolution (UX improvement for TC-DR-003 & TC-DR-004).;27/08/2025;;Approved;
+Task ID;Creation date;Creator;Category;Priority;Description;Planned End Date;AI Notes;Status;Real End Date;
