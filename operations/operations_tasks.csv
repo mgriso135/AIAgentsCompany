@@ -1,0 +1,6 @@
+Task ID;Creation Date;Creator;Category;Priority;Description;Planned End Date;AI Notes;Status;Real End Date
+1;giovedì 28 agosto 2025;Human (Direct Order);Setup;0;Create all necessary files and folders for the Operations Manager AI.;;All initial files and directories for the Operations Manager AI have been successfully created.;Done;giovedì 28 agosto 2025
+2;giovedì 28 agosto 2025;AI (Operations Manager);Process Documentation/Deployment;1;Develop a standard operating procedure (SOP) for AI agent deployment, covering pre-deployment checks, deployment steps, and post-deployment verification.;;;Approved;
+3;giovedì 28 agosto 2025;AI (Operations Manager);Customer Feedback/Value Delivery;1;Establish a framework for collecting and analyzing customer feedback on deployed AI agents, including process design and metric definition.;;;Proposal;
+4;giovedì 28 agosto 2025;AI (Operations Manager);Internal Operations/Efficiency;2;Research and evaluate tools for internal operational efficiency and process automation (e.g., project management, CRM, internal knowledge base).;;;Proposal;
+5;giovedì 28 agosto 2025;AI (Operations Manager);Service Delivery/Legal;1;Draft a template for client-facing service level agreements (SLAs) for AI agent solutions, defining performance metrics, uptime guarantees, and support response times.;;;Proposal;

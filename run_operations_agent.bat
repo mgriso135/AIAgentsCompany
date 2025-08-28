@@ -1,5 +1,5 @@
 @echo off
-title Marketing Agent Session
+title Operations Manager Agent Session
 
 :: Prompt the user to enter the API key for this session
 set /p API_KEY="Please enter the Gemini API Key for this session and press Enter: "
@@ -14,7 +14,7 @@ if not defined API_KEY (
 echo Launching Marketing Agent...
 
 :: Execute the PowerShell script, passing the API key as a parameter
-@powershell.exe -ExecutionPolicy Bypass -File "%~dp0launch_mktg_agent.ps1" -ApiKey "%API_KEY%"
+@powershell.exe -ExecutionPolicy Bypass -File "%~dp0operations.ps1" -ApiKey "%API_KEY%"
 
 echo Agent session finished.
 pause

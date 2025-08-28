@@ -1,0 +1,11 @@
+# Competitors
+lindy.ai
+relevance.ai
+botpress.com
+tidio.com
+crew.ai
+autogen.ai
+langchain.com
+jasper.ai
+hubspot.com
+salesforce.com

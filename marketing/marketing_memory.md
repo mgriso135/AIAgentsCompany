@@ -1,0 +1,3 @@
+CRITICAL INFORMATION AND DECISIONS:
+- giovedì 28 agosto 2025: Initial file system setup for Marketing Manager AI completed successfully, including creation of marketing_tasks.csv, marketing_memory.md, config/platforms.txt, and content_calendar.csv, and their respective headers.
+- giovedì 28 agosto 2025: Comprehensive marketing strategy for the AI Company defined and saved to marketing/Tasks/5/marketing_strategy.md.
