@@ -97,25 +97,69 @@ Before you begin, ensure you have the following installed on your system:
     ```
     (Replace `<repository_url>` and `<repository_name>` with the actual details of your repository.)
 
+### Task Management Backend Setup
+
+The multi-AI agent system relies on a centralized Task Management Backend, implemented as a Flask application. Follow these steps to set it up and run it:
+
+#### Prerequisites
+
+*   **Python 3.x:** Ensure Python is installed on your system.
+*   **pip:** Python's package installer (usually comes with Python).
+
+#### Installation
+
+1.  **Navigate to the backend directory:**
+    ```bash
+    cd backend
+    ```
+2.  **Install required Python packages:**
+    ```bash
+    pip install Flask
+    ```
+
+#### Running the Backend
+
+1.  **Initialize the database (if not already done):**
+    The `task_api.py` script will automatically initialize the `tasks.db` SQLite database if it doesn't exist when it's run for the first time. However, you can also manually initialize it by running:
+    ```bash
+    python initialize_db.py
+    ```
+2.  **Start the Flask application:**
+    ```bash
+    python task_api.py
+    ```
+    This will start the Flask development server, typically on `http://127.0.0.1:5000`. You should see output indicating the server is running.
+
+#### Accessing the Interface
+
+Once the backend is running, you can access its basic web interface (if available) or interact with its API:
+
+*   **Web Interface:** Open your web browser and go to `http://127.0.0.1:5000`.
+*   **API Interaction:** AI agents and developers can interact with the API endpoints (e.g., `/tasks` for creating/retrieving tasks) using tools like `curl` or the provided `unified_api_client.py` script.
+
 ### Running the Agents
 
 Each agent can be run individually using its respective batch (`.bat`) or PowerShell (`.ps1`) script. These scripts are designed to execute the agent's logic via `gemini-cli`.
 
 *   **To run the CEO AI Agent:**
     ```bash
-    .un_ceo_agent.bat
+    .
+run_ceo_agent.bat
     ```
 *   **To run the Business Development AI Agent:**
     ```bash
-    .un_business_development_agent.bat
+    .
+run_business_development_agent.bat
     ```
 *   **To run the Marketing AI Agent:**
     ```bash
-    .un_marketing_agent.bat
+    .
+run_marketing_agent.bat
     ```
 *   **To run the Operations AI Agent:**
     ```bash
-    .un_operations_agent.bat
+    .
+run_operations_agent.bat
     ```
 
 You can run these agents sequentially or in parallel, depending on your operational needs and system capabilities.
