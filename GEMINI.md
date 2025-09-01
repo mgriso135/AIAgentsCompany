@@ -1,5 +1,7 @@
 # AI Company Strategic CANVAS
 
+Business name: AI Company
+
 ## Mission
 
 To empower businesses with intelligent automation by developing and deploying cutting-edge AI agents that solve complex problems, optimize processes, and drive growth.
@@ -16,6 +18,7 @@ The AI Company will focus on developing and deploying AI agents for a variety of
 *   **Data Analysis and Insights:** Extracting valuable insights from data to support decision-making.
 *   **Customer Service and Support:** Providing intelligent and personalized customer interactions.
 *   **Software Development and Testing:** Automating aspects of the software development lifecycle.
+*   **AI Model Development:** Developing and maintaining the AI models and algorithms that power the company's products.
 
 The company will initially target small and medium-sized enterprises (SMEs) and will expand to larger enterprises as the company grows. The company will operate on a B2B model, providing both pre-built AI agent solutions and custom development services.
 
@@ -37,6 +40,7 @@ The company will initially target small and medium-sized enterprises (SMEs) and 
 *   Skilled development team
 *   Data for training and insights
 *   Intellectual property
+*   Developer AI Agent
 
 ### Value Proposition
 *   **For SMEs:** Cost savings (15-40%), increased productivity (up to 40%), enhanced customer experience (24/7 support), data-driven decision making, and increased ROI.
@@ -101,3 +105,78 @@ The company will initially target small and medium-sized enterprises (SMEs) and 
 *   **Freemium/Trial:** Offer a limited free tier or a free trial period to allow SMEs to experience the value of our AI agents firsthand.
 *   **Transparent Credit System (if applicable):** If a credit system is is used, ensure it is simple, transparent, and clearly communicates the cost per task.
 *   Consulting and training fees
+
+## Operational Enhancements
+*   **Task Management System:** Deployed a new centralized task management system with a dedicated API. This enhances operational efficiency and provides a scalable infrastructure for task tracking and collaboration across all AI agents. Clear and consistent reporting from all agents is crucial for effective strategic oversight and continuous alignment. A web-based interface for task management is currently under development to provide a user-friendly way to list, filter, search, and edit tasks across all agents.
+
+### API Usage Examples for AI Agents
+
+AI Agents can interact with the centralized task management system using the `unified_api_client.py` script. Below are examples for common task operations:
+
+#### 1. Create a New Task
+
+Use this command to create a new task in the system.
+
+```bash
+python backend/unified_api_client.py create_task \
+  --title "Develop new feature for AI Agent" \
+  --creator_agent_id "Developer" \
+  --category "Product Development" \
+  --description "Implement a new feature to enhance AI Agent capabilities." \
+  --assigned_agent_id "Core Developer" \
+  --priority 4 \
+  --due_date "2025-10-01" \
+  --ai_notes "Initial thoughts on implementation: Consider modular design."
+```
+
+#### 2. Get Tasks
+
+Use this command to retrieve tasks. You can filter by `task_id`, `creator_agent_id`, `assigned_agent_id`, `status`, or `statuses`.
+
+**Get a specific task by ID:**
+
+```bash
+python backend/unified_api_client.py get_tasks --task_id <TASK_ID>
+```
+
+**Get tasks by creator agent:**
+
+```bash
+python backend/unified_api_client.py get_tasks --creator_agent_id "CEO"
+```
+
+**Get tasks by status:**
+
+```bash
+python backend/unified_api_client.py get_tasks --status "Proposal"
+```
+
+**Get tasks by multiple statuses:**
+
+```bash
+python backend/unified_api_client.py get_tasks --statuses "In Progress" "Awaiting Human Action"
+```
+
+#### 3. Update an Existing Task
+
+Use this command to modify an existing task. You must provide the `task_id` and at least one field to update.
+
+```bash
+python backend/unified_api_client.py update_task \
+  --task_id <TASK_ID> \
+  --status "In Progress" \
+  --ai_notes "Progress update: Frontend integration started." \
+  --priority 2
+```
+
+**Note:** Replace `<TASK_ID>` with the actual task ID obtained from a `create_task` operation. Ensure the `task_api.py` server is running before executing these commands.
+
+*   **Emerging AI Agent Technologies Integration:**
+    *   **Strategic R&D Investment:** Allocate dedicated resources for research and development into Large Action Models (LAMs) and Multi-Agent Systems (MAS), focusing on practical applications for SME pain points.
+    *   **Talent Development:** Invest in training and upskilling the existing development team in emerging AI agent technologies and frameworks.
+    *   **Ethical AI Framework:** Continuously refine and apply our ethical AI framework to address the complexities introduced by more autonomous agents.
+    *   **Partnerships:** Explore partnerships with academic institutions or specialized AI research labs to accelerate knowledge acquisition and development in these areas.
+    *   **Pilot Programs:** Initiate small-scale pilot programs with select SMEs to test and validate the effectiveness of LAMs and MAS in real-world scenarios.
+*   **Task Status Definitions:**
+    *   **Awaiting Human Action:** This status is for tasks that have been completed by an AI agent but require human intervention for final deployment, review, or action (e.g., posting a LinkedIn update, final approval of a document).
+    *   **Done:** This status signifies that a task is fully completed and operational in the real world, requiring no further action from either AI agents or humans.
