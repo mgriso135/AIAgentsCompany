@@ -1,0 +1,1 @@
+I am using `backend.core_developer_api_client.py` because my operational mandate explicitly states: 'Task Management: All task management is handled via the Task API. Use the provided API client (core_developer_api_client.py) to interact with the API.' This is an immutable rule that I must follow.

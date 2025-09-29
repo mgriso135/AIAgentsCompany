@@ -1,0 +1,38 @@
+ * Debugger is active!
+ * Debugger PIN: 838-601-097
+[2025-09-01 17:52:03,503] ERROR in task_api: An error occurred during task creation: table tasks has no column named title
+[2025-09-01 17:52:03,503] ERROR in task_api: Traceback (most recent call last):
+  File "C:\Users\MioPC\Documents\AIAgentsCompany\backend\task_api.py", line 80, in create_task
+    cursor.execute(query, list(new_task.values()))
+sqlite3.OperationalError: table tasks has no column named title
+
+127.0.0.1 - - [01/Sep/2025 17:52:03] "POST /tasks HTTP/1.1" 500 -
+ * Detected change in 'C:\\Users\\MioPC\\Documents\\AIAgentsCompany\\backend\\task_api.py', reloading
+Attempting to initialize database at: C:\Users\MioPC\Documents\AIAgentsCompany\backend\tasks.db
+Database 'tasks.db' initialized and 'tasks' table created.
+DEBUG: Entering create_task function.
+DEBUG: new_task keys: dict_keys(['title', 'creator', 'category', 'description', 'status', 'priority', 'ai_notes', 'assigned_agent', 'creation_date', 'last_modified', 'dependencies', 'original_task_id', 'original_agent_id', 'planned_end_date'])
+DEBUG: columns: title, creator, category, description, status, priority, ai_notes, assigned_agent, creation_date, last_modified, dependencies, original_task_id, original_agent_id, planned_end_date
+DEBUG: placeholders: ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+DEBUG: query: INSERT INTO tasks (title, creator, category, description, status, priority, ai_notes, assigned_agent, creation_date, last_modified, dependencies, original_task_id, original_agent_id, planned_end_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG: new_task values: ['Test Task for API Functionality', 'TestCreator', 'Testing', 'This is a test task to verify create, get, and update operations.', 'Proposal', 5, 'Initial notes for testing.', 'TestAgent', '2025-09-01T17:52:03.503199', '2025-09-01T17:52:03.503199', None, None, None, '2025-09-15']
+ * Debugger is active!
+ * Debugger PIN: 838-601-097
+ * Detected change in 'C:\\Users\\MioPC\\Documents\\AIAgentsCompany\\backend\\task_api.py', reloading
+Attempting to initialize database at: C:\Users\MioPC\Documents\AIAgentsCompany\backend\tasks.db
+Database 'tasks.db' initialized and 'tasks' table created.
+ * Debugger is active!
+ * Debugger PIN: 838-601-097
+ * Detected change in 'C:\\Users\\MioPC\\Documents\\AIAgentsCompany\\backend\\task_api.py', reloading
+Attempting to initialize database at: C:\Users\MioPC\Documents\AIAgentsCompany\backend\tasks.db
+Database 'tasks.db' initialized and 'tasks' table created.
+ * Debugger is active!
+ * Debugger PIN: 838-601-097
+ * Detected change in 'C:\\Users\\MioPC\\Documents\\AIAgentsCompany\\backend\\task_api.py', reloading
+Attempting to initialize database at: C:\Users\MioPC\Documents\AIAgentsCompany\backend\tasks.db
+Database 'tasks.db' initialized and 'tasks' table created.
+ * Debugger is active!
+ * Debugger PIN: 838-601-097
+ * Detected change in 'C:\\Users\\MioPC\\Documents\\AIAgentsCompany\\backend\\task_api.py', reloading
+Attempting to initialize database at: C:\Users\MioPC\Documents\AIAgentsCompany\backend\tasks.db
+Database 'tasks.db' initialized and 'tasks' table created.

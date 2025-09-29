@@ -1,3 +1,10 @@
 CRITICAL INFORMATION AND DECISIONS:
 - giovedì 28 agosto 2025: Initial file system setup for Marketing Manager AI completed successfully, including creation of marketing_tasks.csv, marketing_memory.md, config/platforms.txt, and content_calendar.csv, and their respective headers.
 - giovedì 28 agosto 2025: Comprehensive marketing strategy for the AI Company defined and saved to marketing/Tasks/5/marketing_strategy.md.
+- domenica 31 agosto 2025: Successfully drafted LinkedIn post for Task 28. Learned critical lesson about appending to files: always read existing content, concatenate with new content, then write the combined content back to avoid overwriting. This applies to _SHARED_BRIEFING.md and content_calendar.csv.
+- domenica 31 agosto 2025: Created outline for blog post (Task 29) on AI agents automating business processes for SMEs. Outline saved to marketing/Tasks/29/blog_post_outline.md.
+- domenica 31 agosto 2025: Drafted LinkedIn post (Task 30) on AI agents for data analysis and decision-making. Draft saved to marketing/Tasks/30/linkedin_post_draft.md.
+- domenica 31 agosto 2025: Completed Task ID 27: Ensured all necessary files and folders for the Marketing Manager AI are created and initialized according to the file system map. Confirmed existence of marketing_memory.md, platforms.txt, and content_calendar.csv.
+- domenica 31 agosto 2025: Completed Task ID 31: Defined the comprehensive marketing strategy for the AI Company, encompassing both digital and real-world approaches, aligned with the company's mission, vision, and scope. The strategy is saved to marketing/Tasks/31/marketing_strategy.md.
+- domenica 31 agosto 2025: Completed Task ID 28: Drafted LinkedIn post introducing AI Company, its mission, and vision for SMEs. Draft saved to marketing/Tasks/28/linkedin_post_draft.md.
+- domenica 31 agosto 2025: Completed Task ID 34: Developed content for a dedicated solutions page on the company website focusing on AI agents for Business Process Automation. Content saved to marketing/Tasks/34/solutions_page_bpa.md.

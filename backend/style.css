@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #0D0D2B; /* brand-primary */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+#tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#tasks-table th, #tasks-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#tasks-table th {
+    background-color: #2B076E; /* brand-secondary */
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+#tasks-table th:hover {
+    background-color: #3671E9; /* brand-accent */
+}
+
+.sort-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.sort-asc .sort-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+}
+
+.sort-desc .sort-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+#filter-row input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#tasks-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tasks-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.editable-cell {
+    cursor: pointer;
+}
+
+.editable-cell:hover {
+    background-color: #e0e0e0;
+}
+
+.edit-input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid #3671E9; /* brand-accent */
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.save-btn, .cancel-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.save-btn {
+    background-color: #3671E9; /* brand-accent */
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #2B076E; /* brand-secondary */
+}
+
+.cancel-btn {
+    background-color: #828282; /* brand-gray */
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #555;
+}
+
+/* Choices.js custom styles */
+.choices {
+    width: 100%;
+    margin: 0;
+}
+
+.choices__inner {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3.5px 7.5px 3.5px;
+    min-height: 34px;
+}
+
+.choices__list--multiple .choices__item {
+    background-color: #3671E9; /* brand-accent */
+    border: 1px solid #2B076E; /* brand-secondary */
+    border-radius: 4px;
+    color: white;
+}
+
+.choices[data-type*="select-multiple"] .choices__button, .choices[data-type*="text"] .choices__button {
+    border-left: 1px solid #2B076E; /* brand-secondary */
+    margin-left: 5px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #f1f1f1;
+}

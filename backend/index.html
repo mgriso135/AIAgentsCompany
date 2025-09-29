@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+</head>
+<body>
+    <h1>Task Management Interface</h1>
+    <div class="controls">
+        <input type="text" id="global-search" placeholder="Global Search...">
+    </div>
+    <table id="tasks-table">
+        <thead>
+            <tr>
+                <th data-sort="task_id">Task ID <span class="sort-arrow"></span></th>
+                <th data-sort="description">Description <span class="sort-arrow"></span></th>
+                <th data-sort="status">Status <span class="sort-arrow"></span></th>
+                <th data-sort="assigned_agent">Assigned Agent <span class="sort-arrow"></span></th>
+                <th data-sort="priority">Priority <span class="sort-arrow"></span></th>
+                <th data-sort="creator">Creator <span class="sort-arrow"></span></th>
+                <th data-sort="category">Category <span class="sort-arrow"></span></th>
+                <th data-sort="creation_date">Creation Date <span class="sort-arrow"></span></th>
+                <th data-sort="planned_end_date">Planned End Date <span class="sort-arrow"></span></th>
+                <th data-sort="real_end_date">Real End Date <span class="sort-arrow"></span></th>
+                <th data-sort="ai_notes">AI Notes <span class="sort-arrow"></span></th>
+            </tr>
+            <tr id="filter-row">
+                <td><input type="text" class="filter-input" data-filter-column="task_id" placeholder="Filter ID"></td>
+                <td><input type="text" class="filter-input" data-filter-column="description" placeholder="Filter Description"></td>
+                <td><select multiple class="filter-input" data-filter-column="status"></select></td>
+                <td><select multiple class="filter-input" data-filter-column="assigned_agent"></select></td>
+                <td><select multiple class="filter-input" data-filter-column="priority"></select></td>
+                <td><select multiple class="filter-input" data-filter-column="creator"></select></td>
+                <td><select multiple class="filter-input" data-filter-column="category"></select></td>
+                <td><input type="text" class="filter-input" data-filter-column="creation_date" placeholder="Filter Creation Date"></td>
+                <td><input type="text" class="filter-input" data-filter-column="planned_end_date" placeholder="Filter Planned End Date"></td>
+                <td><input type="text" class="filter-input" data-filter-column="real_end_date" placeholder="Filter Real End Date"></td>
+                <td><input type="text" class="filter-input" data-filter-column="ai_notes" placeholder="Filter AI Notes"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tasks will be loaded here by JavaScript -->
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

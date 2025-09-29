@@ -11,7 +11,7 @@ if not defined API_KEY (
     exit /b
 )
 
-echo Launching Marketing Agent...
+echo Launching CEO AI Agent...
 
 :: Execute the PowerShell script, passing the API key as a parameter
 @powershell.exe -ExecutionPolicy Bypass -File "%~dp0ceo.ps1" -ApiKey "%API_KEY%"
